@@ -23,7 +23,7 @@ import {
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import { Button } from '@/app/components/ui/button';
 import { Card } from '@/app/components/ui/card';
-import logo from 'figma:asset/88f42cdb1deb44968ac07fd91d49b5e99ca2a17e.png';
+import logo from '@/assets/88f42cdb1deb44968ac07fd91d49b5e99ca2a17e.png';
 
 export default function App() {
   const [email, setEmail] = useState('');
