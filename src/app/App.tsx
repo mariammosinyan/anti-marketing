@@ -546,17 +546,17 @@ export default function App() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <Card className="bg-white/10 backdrop-blur-lg border-white/20 p-8 h-full hover:bg-white/15 transition-all overflow-hidden">
-                    <div className="flex items-start space-x-4 mb-4">
-                      <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 w-20 h-20 rounded-2xl flex items-center justify-center flex-shrink-0 border-2 border-white/30">
-                        <span className="text-3xl font-bold text-white">{pillar.letter}</span>
+                  <Card className="bg-white/10 backdrop-blur-lg border-white/20 p-4 sm:p-8 h-full hover:bg-white/15 transition-all overflow-hidden">
+                    <div className="flex items-start space-x-3 sm:space-x-4 mb-4">
+                      <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center flex-shrink-0 border-2 border-white/30">
+                        <span className="text-2xl sm:text-3xl font-bold text-white">{pillar.letter}</span>
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="flex items-center space-x-3 mb-3">
+                        <div className="flex items-center space-x-2 sm:space-x-3 mb-3">
                           {pillar.icon}
-                          <h3 className="text-2xl font-bold text-white break-words">{pillar.title}</h3>
+                          <h3 className="text-xl sm:text-2xl font-bold text-white break-words">{pillar.title}</h3>
                         </div>
-                        <p className="text-white/80 text-lg leading-relaxed break-words">{pillar.description}</p>
+                        <p className="text-white/80 text-base sm:text-lg leading-relaxed break-words">{pillar.description}</p>
                       </div>
                     </div>
                   </Card>
@@ -572,12 +572,12 @@ export default function App() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <Card className="bg-gradient-to-br from-red-500/20 to-orange-500/20 backdrop-blur-lg border-2 border-red-400/30 p-8 overflow-hidden">
-              <div className="flex items-start space-x-4">
-                <AlertCircle className="w-12 h-12 text-red-300 flex-shrink-0" />
+            <Card className="bg-gradient-to-br from-red-500/20 to-orange-500/20 backdrop-blur-lg border-2 border-red-400/30 p-4 sm:p-8 overflow-hidden">
+              <div className="flex items-start space-x-3 sm:space-x-4">
+                <AlertCircle className="w-10 h-10 sm:w-12 sm:h-12 text-red-300 flex-shrink-0" />
                 <div className="space-y-3 min-w-0 flex-1">
-                  <h3 className="text-2xl font-bold text-white break-words">But before you scale the system, you need to DETOX —</h3>
-                  <p className="text-lg text-white/90 leading-relaxed break-words">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white break-words">But before you scale the system, you need to DETOX —</h3>
+                  <p className="text-base sm:text-lg text-white/90 leading-relaxed break-words">
                     remove the tactics, tools, and assumptions that keep you busy without making you effective.
                   </p>
                 </div>
