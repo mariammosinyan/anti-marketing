@@ -42,11 +42,12 @@ export default function App() {
             <div className="flex items-center">
               <img src={logo} alt="WebMarket" className="h-8" />
             </div>
-            <a href="https://wa.me/37494508155" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700">
-                Let's Talk
-              </Button>
-            </a>
+            <Button 
+              onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/mariammosinyan/30-minute-meeting-clone?hide_event_type_details=1'})}
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700"
+            >
+              Let's Talk
+            </Button>
           </div>
         </div>
       </header>
@@ -73,15 +74,14 @@ export default function App() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://wa.me/37494508155" target="_blank" rel="noopener noreferrer">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all"
-                >
-                  Start Your Transformation
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </a>
+              <Button 
+                onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/mariammosinyan/30-minute-meeting-clone?hide_event_type_details=1'})}
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all"
+              >
+                Start Your Transformation
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
             </div>
           </motion.div>
         </div>
@@ -700,15 +700,14 @@ export default function App() {
               </p>
             </div>
             
-            <a href="https://wa.me/37494508155" target="_blank" rel="noopener noreferrer">
-              <Button 
-                size="lg"
-                className="bg-white text-purple-600 hover:bg-blue-50 px-12 py-6 rounded-full font-semibold text-xl shadow-2xl hover:shadow-3xl transition-all"
-              >
-                Reach Out to Webmarket
-                <ArrowRight className="ml-2 w-6 h-6" />
-              </Button>
-            </a>
+            <Button 
+              onClick={() => (window as any).Calendly?.initPopupWidget({url: 'https://calendly.com/mariammosinyan/30-minute-meeting-clone?hide_event_type_details=1'})}
+              size="lg"
+              className="bg-white text-purple-600 hover:bg-blue-50 px-12 py-6 rounded-full font-semibold text-xl shadow-2xl hover:shadow-3xl transition-all"
+            >
+              Schedule a Free Consultation
+              <ArrowRight className="ml-2 w-6 h-6" />
+            </Button>
 
             <p className="mt-8 text-xl text-white">
               Let's make your marketing impossible to ignore.
