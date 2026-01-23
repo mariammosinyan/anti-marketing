@@ -748,7 +748,7 @@ export default function App() {
             className="text-center mt-12"
           >
             <a 
-              href="https://www.google.com/search?q=webmarket" 
+              href="https://www.google.com/search?q=WebMarket&stick=H4sIAAAAAAAAAONgU1I1qDAxMEtMSkk2N0yxNLRINUuyMqgwMzM3T7NINEpLM0mysEwxWMTKGZ6a5JtYlJ1aAgBFSKICNQAAAA#mpd=~9641608599239458264/customers/reviews" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold text-lg"
