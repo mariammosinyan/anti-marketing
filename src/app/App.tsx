@@ -18,7 +18,9 @@ import {
   MessageSquare,
   Navigation,
   Settings,
-  AlertCircle
+  AlertCircle,
+  Star,
+  Quote
 } from 'lucide-react';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import { Button } from '@/app/components/ui/button';
@@ -667,6 +669,93 @@ export default function App() {
             <p className="text-xl font-semibold text-slate-900">
               It's about building marketing that actually works in the real world.
             </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Google Reviews / Testimonials Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center space-x-2 bg-white border border-slate-200 px-6 py-3 rounded-full mb-6">
+              <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+              <span className="text-lg font-semibold text-slate-900">Client Reviews</span>
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">
+              What Our Clients Say
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Don't just take our word for it — see what our clients have experienced.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Sarah Johnson",
+                role: "CEO, TechStart Solutions",
+                rating: 5,
+                review: "Webmarket completely transformed our brand identity. Their anti-marketing approach helped us stand out in a crowded tech market. Our conversion rates increased by 300%."
+              },
+              {
+                name: "Michael Chen",
+                role: "Founder, Creative Studio Co",
+                rating: 5,
+                review: "Finally, a marketing team that gets it. They didn't give us cookie-cutter solutions. Instead, they built a system that actually reflects who we are and attracts our ideal clients."
+              },
+              {
+                name: "Emily Rodriguez",
+                role: "Marketing Director, GrowthLab",
+                rating: 5,
+                review: "The A.N.T.I. System changed everything for us. We went from invisible to impossible to ignore. The strategic depth and execution quality are unmatched."
+              }
+            ].map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Card className="p-8 h-full hover:shadow-xl transition-shadow border-2 border-slate-100 hover:border-purple-200 bg-white">
+                  <div className="flex items-center space-x-1 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                    ))}
+                  </div>
+                  <Quote className="w-8 h-8 text-purple-200 mb-4" />
+                  <p className="text-slate-700 leading-relaxed mb-6">
+                    {testimonial.review}
+                  </p>
+                  <div className="border-t border-slate-200 pt-4">
+                    <p className="font-semibold text-slate-900">{testimonial.name}</p>
+                    <p className="text-sm text-slate-600">{testimonial.role}</p>
+                  </div>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mt-12"
+          >
+            <a 
+              href="https://www.google.com/search?q=webmarket" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold text-lg"
+            >
+              Read More Reviews on Google
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
           </motion.div>
         </div>
       </section>
