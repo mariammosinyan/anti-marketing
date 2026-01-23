@@ -62,11 +62,11 @@ export default function App() {
             transition={{ duration: 0.8 }}
             className="text-center max-w-5xl mx-auto"
           >
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-slate-900 via-blue-900 to-purple-900 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-blue-900 to-purple-900 bg-clip-text text-transparent leading-tight">
               Build a magnetic brand that stops the scroll & sells for you
             </h1>
             
-            <p className="text-2xl sm:text-3xl text-slate-600 mb-6 leading-relaxed">
+            <p className="text-2xl sm:text-3xl text-slate-600 mb-3 leading-relaxed">
               The Anti-Marketing Strategy
             </p>
 
