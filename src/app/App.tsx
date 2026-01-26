@@ -165,13 +165,18 @@ export default function App() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <a 
+                href="https://www.canva.com/design/DAG_IYAuY_g/S2_riznyEHKIBLo6l04QUA/view?utm_content=DAG_IYAuY_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0ff0ea816c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative rounded-3xl overflow-hidden shadow-2xl bg-[#0e1428] cursor-pointer hover:shadow-purple-500/50 transition-shadow"
+              >
                 <img
                   src={businessToSuccessAnatomy}
                   alt="Business to success anatomy"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[500px] object-contain"
                 />
-              </div>
+              </a>
             </motion.div>
           </div>
         </div>
