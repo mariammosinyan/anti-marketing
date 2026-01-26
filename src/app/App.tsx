@@ -36,9 +36,9 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -63,15 +63,15 @@ export default function App() {
             transition={{ duration: 0.8 }}
             className="text-center max-w-5xl mx-auto"
           >
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-blue-900 to-purple-900 bg-clip-text text-transparent leading-tight uppercase">
-              Build a magnetic brand that <span className="border-b-2 border-slate-900 px-2">stops the scroll</span> & <span className="border-b-2 border-slate-900 px-2">sells for you</span>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent leading-tight uppercase">
+              Build a magnetic brand that <span className="border-b-2 border-blue-400 px-2">stops the scroll</span> & <span className="border-b-2 border-purple-400 px-2">sells for you</span>
             </h1>
             
-            <p className="text-2xl sm:text-3xl text-slate-600 mb-3 leading-relaxed">
+            <p className="text-2xl sm:text-3xl text-slate-300 mb-3 leading-relaxed">
               The Anti-Marketing Strategy
             </p>
 
-            <p className="text-xl text-slate-500 mb-12">
+            <p className="text-xl text-slate-400 mb-12">
               For businesses that are done blending in
             </p>
 
@@ -90,7 +90,7 @@ export default function App() {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -99,15 +99,15 @@ export default function App() {
             className="space-y-8"
           >
             <div className="text-center">
-              <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-slate-900">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
                 This isn't traditional marketing.
               </h2>
-              <p className="text-2xl text-slate-600">
+              <p className="text-2xl text-slate-300">
                 And it's definitely not about playing it safe.
               </p>
             </div>
 
-            <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
+            <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
               <p>
                 The Anti-Marketing Strategy is a deliberate approach to marketing that breaks the rules, 
                 challenges industry norms, and creates campaigns people actually remember.
@@ -122,7 +122,7 @@ export default function App() {
       </section>
 
       {/* What Anti-Branding Means */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-950">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -130,7 +130,7 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               What "Anti-Marketing" Really Means
             </h2>
           </motion.div>
@@ -140,22 +140,22 @@ export default function App() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-6 text-lg text-slate-700 leading-relaxed"
+              className="space-y-6 text-lg text-slate-300 leading-relaxed"
             >
-              <p className="text-xl font-semibold text-slate-900">
+              <p className="text-xl font-semibold text-white">
                 Anti-marketing is not about being messy or unprofessional.
               </p>
               <p>
                 It's about intentionally going against what everyone else is doing — visually, verbally, 
                 and strategically — so your marketing becomes impossible to ignore.
               </p>
-              <div className="space-y-3 pl-6 border-l-4 border-purple-600">
-                <p className="text-slate-600">Most marketing follows the same formulas.</p>
-                <p className="text-slate-600">Same tactics.</p>
-                <p className="text-slate-600">Same language.</p>
-                <p className="text-slate-600">Same messaging.</p>
+              <div className="space-y-3 pl-6 border-l-4 border-purple-500">
+                <p className="text-slate-400">Most marketing follows the same formulas.</p>
+                <p className="text-slate-400">Same tactics.</p>
+                <p className="text-slate-400">Same language.</p>
+                <p className="text-slate-400">Same messaging.</p>
               </div>
-              <p className="text-xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <p className="text-xl font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Anti-marketing exists to disrupt that.
               </p>
             </motion.div>
@@ -178,7 +178,7 @@ export default function App() {
       </section>
 
       {/* Who This Is For */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -186,10 +186,10 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Who This Approach Is For
             </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-2xl mx-auto">
               This strategy is for you if:
             </p>
           </motion.div>
@@ -197,23 +197,23 @@ export default function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: <Eye className="w-8 h-8 text-blue-600" />,
+                icon: <Eye className="w-8 h-8 text-blue-400" />,
                 text: "You're tired of seeing marketing in your industry all look the same"
               },
               {
-                icon: <Target className="w-8 h-8 text-purple-600" />,
+                icon: <Target className="w-8 h-8 text-purple-400" />,
                 text: "Your current marketing doesn't reflect who you really are"
               },
               {
-                icon: <Shield className="w-8 h-8 text-blue-600" />,
+                icon: <Shield className="w-8 h-8 text-blue-400" />,
                 text: "You feel invisible online, despite doing \"everything right\""
               },
               {
-                icon: <Users className="w-8 h-8 text-purple-600" />,
+                icon: <Users className="w-8 h-8 text-purple-400" />,
                 text: "You want your marketing to attract the right people and repel the wrong ones"
               },
               {
-                icon: <Zap className="w-8 h-8 text-blue-600" />,
+                icon: <Zap className="w-8 h-8 text-blue-400" />,
                 text: "You're ready to show up confidently and stop second-guessing your marketing"
               }
             ].map((item, index) => (
@@ -224,11 +224,11 @@ export default function App() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="p-8 h-full hover:shadow-xl transition-shadow border-2 border-slate-100 hover:border-purple-200">
-                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                <Card className="p-8 h-full bg-slate-800/50 hover:bg-slate-800/70 border-2 border-slate-700 hover:border-purple-500 transition-all">
+                  <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
                     {item.icon}
                   </div>
-                  <p className="text-slate-700 leading-relaxed text-lg">{item.text}</p>
+                  <p className="text-slate-300 leading-relaxed text-lg">{item.text}</p>
                 </Card>
               </motion.div>
             ))}
@@ -240,7 +240,7 @@ export default function App() {
             viewport={{ once: true }}
             className="mt-12 text-center"
           >
-            <p className="text-xl text-slate-600 italic">
+            <p className="text-xl text-slate-400 italic">
               If you've ever thought "this doesn't feel like me" — that's exactly the point where anti-marketing begins.
             </p>
           </motion.div>
@@ -300,7 +300,7 @@ export default function App() {
       </section>
 
       {/* What We Focus On */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-950">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -308,10 +308,10 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               What the Anti-Marketing Strategy Focuses On
             </h2>
-            <p className="text-2xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-2xl text-slate-300 max-w-2xl mx-auto">
               Instead, anti-marketing is about creating campaigns people feel.
             </p>
           </motion.div>
@@ -319,27 +319,27 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {[
               {
-                icon: <Sparkles className="w-8 h-8 text-blue-600" />,
+                icon: <Sparkles className="w-8 h-8 text-blue-400" />,
                 title: "Create a signature marketing style",
                 description: "that's instantly recognizable"
               },
               {
-                icon: <Eye className="w-8 h-8 text-purple-600" />,
+                icon: <Eye className="w-8 h-8 text-purple-400" />,
                 title: "Use visuals and messaging",
                 description: "that stop the scroll"
               },
               {
-                icon: <TrendingUp className="w-8 h-8 text-blue-600" />,
+                icon: <TrendingUp className="w-8 h-8 text-blue-400" />,
                 title: "Build emotional connection",
                 description: "and customer obsession"
               },
               {
-                icon: <MessageCircle className="w-8 h-8 text-purple-600" />,
+                icon: <MessageCircle className="w-8 h-8 text-purple-400" />,
                 title: "Say what others won't say",
                 description: "— clearly and confidently"
               },
               {
-                icon: <Target className="w-8 h-8 text-blue-600" />,
+                icon: <Target className="w-8 h-8 text-blue-400" />,
                 title: "Become magnetic",
                 description: "to the right audience"
               }
@@ -351,14 +351,14 @@ export default function App() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="p-8 hover:shadow-xl transition-shadow border-2 border-slate-100 hover:border-purple-200">
+                <Card className="p-8 bg-slate-800/50 hover:bg-slate-800/70 border-2 border-slate-700 hover:border-purple-500 transition-all">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-gradient-to-br from-blue-50 to-purple-50 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
                       {item.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2 text-slate-900">{item.title}</h3>
-                      <p className="text-slate-600 leading-relaxed">{item.description}</p>
+                      <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
+                      <p className="text-slate-300 leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -372,10 +372,10 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center space-y-4"
           >
-            <p className="text-2xl text-slate-700">
+            <p className="text-2xl text-slate-300">
               The goal isn't to appeal to everyone.
             </p>
-            <p className="text-2xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <p className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               The goal is to be unforgettable to the right ones.
             </p>
           </motion.div>
@@ -383,7 +383,7 @@ export default function App() {
       </section>
 
       {/* Why This Works */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -406,19 +406,19 @@ export default function App() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Why This Works
               </h2>
               
-              <p className="text-2xl text-slate-700">
+              <p className="text-2xl text-slate-300">
                 People don't fall in love with "professional."
               </p>
-              <p className="text-2xl font-semibold text-slate-900">
+              <p className="text-2xl font-semibold text-white">
                 They fall in love with distinctive.
               </p>
 
               <div className="space-y-4 mt-8">
-                <p className="text-xl text-slate-600 mb-4">Anti-marketing works because it:</p>
+                <p className="text-xl text-slate-300 mb-4">Anti-marketing works because it:</p>
                 {[
                   "Leans into contrast instead of conformity",
                   "Uses psychology, not templates",
@@ -433,14 +433,14 @@ export default function App() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-start space-x-3"
                   >
-                    <CheckCircle2 className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-lg text-slate-700">{item}</span>
+                    <CheckCircle2 className="w-6 h-6 text-purple-400 flex-shrink-0 mt-1" />
+                    <span className="text-lg text-slate-300">{item}</span>
                   </motion.div>
                 ))}
               </div>
 
-              <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl">
-                <p className="text-xl text-slate-900">
+              <div className="mt-8 p-6 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl border border-purple-500/30">
+                <p className="text-xl text-white">
                   When done right, your marketing starts doing the selling before the conversation even begins.
                 </p>
               </div>
@@ -603,7 +603,7 @@ export default function App() {
       </section>
 
       {/* How We Apply This */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-950">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -611,10 +611,10 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               How We Apply This at Webmarket
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               At Webmarket, anti-marketing is not a concept — it's a working strategy.
             </p>
           </motion.div>
@@ -622,19 +622,19 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {[
               {
-                icon: <Target className="w-8 h-8 text-blue-600" />,
+                icon: <Target className="w-8 h-8 text-blue-400" />,
                 title: "Audit where marketing is playing it safe"
               },
               {
-                icon: <Eye className="w-8 h-8 text-purple-600" />,
+                icon: <Eye className="w-8 h-8 text-purple-400" />,
                 title: "Identify where sameness is costing attention and sales"
               },
               {
-                icon: <Lightbulb className="w-8 h-8 text-blue-600" />,
+                icon: <Lightbulb className="w-8 h-8 text-blue-400" />,
                 title: "Rebuild marketing strategy, messaging, and systems around clarity and contrast"
               },
               {
-                icon: <Zap className="w-8 h-8 text-purple-600" />,
+                icon: <Zap className="w-8 h-8 text-purple-400" />,
                 title: "Align marketing, branding, and automation into one system"
               }
             ].map((item, index) => (
@@ -645,12 +645,12 @@ export default function App() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="p-8 hover:shadow-xl transition-shadow border-2 border-slate-100 hover:border-purple-200">
+                <Card className="p-8 bg-slate-800/50 hover:bg-slate-800/70 border-2 border-slate-700 hover:border-purple-500 transition-all">
                   <div className="flex items-center space-x-4">
-                    <div className="bg-gradient-to-br from-blue-50 to-purple-50 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
                       {item.icon}
                     </div>
-                    <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
+                    <h3 className="text-xl font-semibold text-white">{item.title}</h3>
                   </div>
                 </Card>
               </motion.div>
@@ -663,10 +663,10 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center space-y-4"
           >
-            <p className="text-xl text-slate-700">
+            <p className="text-xl text-slate-300">
               This is not about one-off visuals or copy.
             </p>
-            <p className="text-xl font-semibold text-slate-900">
+            <p className="text-xl font-semibold text-white">
               It's about building marketing that actually works in the real world.
             </p>
           </motion.div>
@@ -674,7 +674,7 @@ export default function App() {
       </section>
 
       {/* Google Reviews Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -682,10 +682,10 @@ export default function App() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Trusted by Businesses Worldwide
             </h2>
-            <p className="text-xl text-slate-600 mb-12">
+            <p className="text-xl text-slate-300 mb-12">
               See what our clients have to say about working with us.
             </p>
             
@@ -695,7 +695,7 @@ export default function App() {
               rel="noopener noreferrer"
               className="inline-block"
             >
-              <Card className="max-w-md mx-auto p-8 hover:shadow-2xl transition-all border-2 border-slate-200 hover:border-purple-300 bg-white group cursor-pointer">
+              <Card className="max-w-md mx-auto p-8 hover:shadow-2xl transition-all border-2 border-slate-700 hover:border-purple-500 bg-slate-800/50 hover:bg-slate-800/70 group cursor-pointer">
                 <div className="flex flex-col items-center space-y-4">
                   <div className="flex items-center space-x-2">
                     {[...Array(5)].map((_, i) => (
@@ -703,10 +703,10 @@ export default function App() {
                     ))}
                   </div>
                   <div className="text-center">
-                    <p className="text-2xl font-bold text-slate-900 mb-2">5.0 Rating</p>
-                    <p className="text-slate-600 mb-4">Based on Google Reviews</p>
+                    <p className="text-2xl font-bold text-white mb-2">5.0 Rating</p>
+                    <p className="text-slate-300 mb-4">Based on Google Reviews</p>
                   </div>
-                  <div className="flex items-center space-x-3 text-purple-600 group-hover:text-purple-700 font-semibold text-lg">
+                  <div className="flex items-center space-x-3 text-purple-400 group-hover:text-purple-300 font-semibold text-lg">
                     <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                       <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
