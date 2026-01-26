@@ -25,7 +25,7 @@ import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import { Button } from '@/app/components/ui/button';
 import { Card } from '@/app/components/ui/card';
 import logo from '@/assets/88f42cdb1deb44968ac07fd91d49b5e99ca2a17e.png';
-import traditionalMarketingIsDead from '@/assets/traditional-marketing-is-dead.png';
+import breakTheRule from '@/assets/break-the-rule.png';
 
 export default function App() {
   const [email, setEmail] = useState('');
@@ -167,8 +167,8 @@ export default function App() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src={traditionalMarketingIsDead}
-                  alt="Traditional marketing is dead"
+                  src={breakTheRule}
+                  alt="Break the rule"
                   className="w-full h-[500px] object-cover"
                 />
               </div>
